@@ -1,1 +1,23 @@
 /* ESTILOS DEL FOOTER */
+
+@use '../mixins/responsive.scss' as *;
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+
+    @include responsive(laptop){
+margin-top: -5rem;
+    }
+
+&__logo{}
+
+&__socialmedia{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+}
